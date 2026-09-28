@@ -9,7 +9,7 @@
   <meta property="og:title" content="DJ Rebeca — Cupido do Caos" />
   <meta property="og:description" content="Funk • Funknejo • Sertanejo • Mega Funk • Cupido do Caos" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/rebeca-cupido-new.jpg" />
+  <meta property="og:image" content="assets/hero-cupido.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -39,9 +39,14 @@
   <main>
     <section class="hero" id="inicio">
       <div class="hero-backdrop"></div>
-      <div class="hero-photo-wrap reveal">
-        <img class="hero-photo" src="assets/rebeca-hero-new.jpg" alt="DJ Rebeca" fetchpriority="high" decoding="async" />
+      <div class="hero-photo-wrap reveal" id="heroCarousel">
+        <img class="hero-photo hero-slide active" src="assets/hero-clean.jpg" alt="DJ Rebeca sentada com headphones" fetchpriority="high" decoding="async" />
+        <img class="hero-photo hero-slide" src="assets/hero-cupido.jpg" alt="DJ Rebeca — Cupido do Caos" decoding="async" />
         <div class="hero-photo-overlay"></div>
+        <div class="hero-dots" aria-label="Fotos principais">
+          <button class="hero-dot active" type="button" aria-label="Mostrar primeira foto"></button>
+          <button class="hero-dot" type="button" aria-label="Mostrar segunda foto"></button>
+        </div>
       </div>
       <div class="hero-copy reveal delay-1">
         <p class="eyebrow">PRESS KIT • 2026</p>
@@ -93,7 +98,7 @@
       <div class="section-label reveal"><span>02</span> IDENTIDADE</div>
       <div class="concept-grid">
         <div class="concept-photo reveal">
-          <img loading="lazy" decoding="async" src="assets/rebeca-cupido-new.jpg" alt="Identidade visual Cupido do Caos da DJ Rebeca" />
+          <img loading="lazy" decoding="async" src="assets/hero-cupido.jpg" alt="Identidade visual Cupido do Caos da DJ Rebeca" />
           <div class="photo-stamp">♡ CHAOS APPROVED</div>
         </div>
         <div class="concept-copy reveal delay-1">
@@ -131,11 +136,13 @@
         <h2>VISUAL<br><em>PRESS KIT</em></h2>
       </div>
       <div class="gallery-grid">
-        <button class="gallery-item tall reveal" data-full="assets/rebeca-g1.jpg"><img loading="lazy" decoding="async" src="assets/rebeca-g1.jpg" alt="DJ Rebeca com headphones" /></button>
-        <button class="gallery-item reveal delay-1" data-full="assets/rebeca-g2.jpg"><img loading="lazy" decoding="async" src="assets/rebeca-g2.jpg" alt="DJ Rebeca olhando para trás" /></button>
-        <button class="gallery-item reveal delay-2" data-full="assets/rebeca-g3.jpg"><img loading="lazy" decoding="async" src="assets/rebeca-g3.jpg" alt="DJ Rebeca sorrindo com headphones" /></button>
-        <button class="gallery-item wide reveal" data-full="assets/rebeca-g4.jpg"><img loading="lazy" decoding="async" src="assets/rebeca-g4.jpg" alt="DJ Rebeca em retrato frontal com headphones" /></button>
-        <button class="gallery-item reveal delay-1" data-full="assets/rebeca-cupido-new.jpg"><img loading="lazy" decoding="async" src="assets/rebeca-cupido-new.jpg" alt="DJ Rebeca — Cupido do Caos" /></button>
+        <button class="gallery-item tall reveal" data-full="assets/about-final.jpg"><img loading="lazy" decoding="async" src="assets/about-final.jpg" alt="DJ Rebeca sentada com headphones no pescoço" /></button>
+        <button class="gallery-item reveal delay-1" data-full="assets/gallery-1.jpg"><img loading="lazy" decoding="async" src="assets/gallery-1.jpg" alt="DJ Rebeca olhando para trás" /></button>
+        <button class="gallery-item reveal delay-2" data-full="assets/gallery-2.jpg"><img loading="lazy" decoding="async" src="assets/gallery-2.jpg" alt="DJ Rebeca em retrato frontal com headphones" /></button>
+        <button class="gallery-item wide reveal" data-full="assets/gallery-3.jpg"><img loading="lazy" decoding="async" src="assets/gallery-3.jpg" alt="DJ Rebeca em pé com headphones" /></button>
+        <button class="gallery-item reveal delay-1" data-full="assets/gallery-4.jpg"><img loading="lazy" decoding="async" src="assets/gallery-4.jpg" alt="DJ Rebeca de perfil com headphones" /></button>
+        <button class="gallery-item reveal delay-2" data-full="assets/gallery-5.jpg"><img loading="lazy" decoding="async" src="assets/gallery-5.jpg" alt="DJ Rebeca em bastidores de maquiagem" /></button>
+        <button class="gallery-item wide reveal" data-full="assets/gallery-6.jpg"><img loading="lazy" decoding="async" src="assets/gallery-6.jpg" alt="DJ Rebeca em retrato preto e branco" /></button>
       </div>
     </section>
 
