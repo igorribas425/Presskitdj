@@ -45,3 +45,19 @@ footer{position:relative;z-index:5;border-top:1px solid var(--line);min-height:1
   .gallery-item img{object-position:center 25%}
   .booking{padding:92px 18px}
 }
+
+.hero-photo-wrap{position:relative}
+.hero-slide{position:absolute;inset:0;opacity:0;transform:scale(1.025);transition:opacity 1s ease,transform 5s ease}
+.hero-slide.active{opacity:1;transform:scale(1)}
+.hero-dots{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:8px;z-index:6}
+.hero-dot{width:28px;height:4px;border:0;border-radius:20px;background:rgba(255,255,255,.35);padding:0;cursor:pointer;transition:.25s}
+.hero-dot.active{background:var(--pink);box-shadow:0 0 14px rgba(255,45,135,.7)}
+@media (max-width:900px){
+  .hero-slide:first-of-type{object-position:center 18%}
+  .hero-slide:nth-of-type(2){object-position:center 26%}
+}
+@media (max-width:560px){
+  .hero-slide:first-of-type{object-position:center 16%}
+  .hero-slide:nth-of-type(2){object-position:center 24%}
+  .hero-dots{bottom:12px}
+}
